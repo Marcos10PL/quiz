@@ -1,0 +1,182 @@
+#app
+{
+  background: var(--primary);
+  background: radial-gradient(circle, var(--primary) 0%, rgba(29,28,32) 100%);
+  width: max-content;
+  border: 1px dotted var(--text);
+  box-shadow: 0px 0px 18px black;
+  margin: 20px auto;
+}
+
+/* start page */
+.startPage
+{
+  width: 300px;
+  margin: auto;
+}
+
+input[type='text']
+{
+  outline: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  box-sizing: border-box;
+  background-color: var(--bg);
+  padding: 12px;
+  box-shadow: 0px 0px 4px darkgray;
+  transition: box-shadow .12s ease-in-out;
+  width: 100%;
+}
+
+select
+{
+  outline: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  background-color: var(--bg);
+  padding: 12px;
+  box-shadow: 0px 0px 4px darkgray;
+  transition: box-shadow .12s ease-in-out;
+  width: 100%;
+  margin-top: 16px;
+}
+
+select:focus
+{
+  box-shadow: 0px 0px 8px var(--text);
+}
+
+/* quiz page */
+.quizPage
+{
+  text-align: center;
+  padding: 30px;
+  width: 520px;
+  margin: auto;
+}
+
+h3
+{
+  padding: 0 5px;
+  margin: 0;
+  text-align: center;
+}
+
+.stats
+{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  background-color: var(--bg);
+  box-shadow: 0px 0px 4px var(--text);
+}
+
+/* end page */
+.endPage
+{
+  text-align: center;
+  padding: 30px;
+  width: 520px;
+  font-size: 19px;
+  margin: auto;
+}
+
+.endPage h2, .endPage p:last-child
+{
+  margin: 0;
+}
+
+
+/* error div */
+.quizPage .error
+{
+  font-size: 19px;
+}
+
+.error
+{
+  color: var(--error);
+  text-shadow: 0px 0px 2px black;
+  text-align: center;
+  padding: 15px 5px;
+}
+
+/* button */
+button
+{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font: inherit;
+  font-size: 19px;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  background-color: var(--text);
+  color: var(--primary);
+  box-shadow: 0px 0px 8px black;
+  transition: box-shadow .12s ease-in-out;
+  width: 100%;
+  padding: 10px;
+  margin-top: 16px;
+}
+  
+button:hover
+{
+  box-shadow: 0px 0px 10px var(--primary);
+}
+   
+/* RWD */
+@media (max-width: 680px) 
+{
+  #app
+  {
+    width: 95vw;
+  }
+
+  .startPage
+  {
+    width: 80%;
+    padding: 30px 20px !important;
+  }
+
+  .startPage .error
+  {
+    padding-bottom: 0;
+  }
+  
+  .quizPage
+  {
+    width: 80%;
+  }
+
+  .startPage .error
+  {
+    padding-bottom: 0 !important;
+  }
+
+  .endPage
+  {
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px)
+{
+  .stats > div
+  {
+    padding: 0 10px;
+  }
+
+  .stats
+  {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
