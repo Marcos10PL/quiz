@@ -9,7 +9,7 @@
 }
 
 /* start page */
-.startPage
+.start-page
 {
   width: 300px;
   margin: auto;
@@ -51,7 +51,7 @@ select:focus
 }
 
 /* quiz page */
-.quizPage
+.quiz-page
 {
   text-align: center;
   padding: 30px;
@@ -78,7 +78,7 @@ h3
 }
 
 /* end page */
-.endPage
+.end-page
 {
   text-align: center;
   padding: 30px;
@@ -87,24 +87,26 @@ h3
   margin: auto;
 }
 
-.endPage h2, .endPage p:last-child
+.end-page h2
+{
+  margin: 0 0 16px 0;
+}
+
+.end-page ul
 {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-
-/* error div */
-.quizPage .error
+.end-page ul li
 {
-  font-size: 19px;
+  margin-top: 8px;
 }
 
-.error
+.end-page ul li:last-child
 {
-  color: var(--error);
-  text-shadow: 0px 0px 2px black;
-  text-align: center;
-  padding: 15px 5px;
+  margin-top: 16px;
 }
 
 /* button */
@@ -140,28 +142,28 @@ button:hover
     width: 95vw;
   }
 
-  .startPage
+  .start-page
   {
     width: 80%;
     padding: 30px 20px !important;
   }
 
-  .startPage .error
+  .start-page .error
   {
     padding-bottom: 0;
   }
   
-  .quizPage
+  .quiz-page
   {
     width: 80%;
   }
 
-  .startPage .error
+  .start-page .error
   {
     padding-bottom: 0 !important;
   }
 
-  .endPage
+  .end-page
   {
     width: 80%;
   }

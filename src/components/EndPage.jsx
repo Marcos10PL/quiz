@@ -1,16 +1,15 @@
 const EndPage = ({name, data, points, difficulty}) =>
 {
     return(
-      <div className="endPage">
+      <div className="end-page">
         <h2>Quiz Completed</h2>
-          <p>Your name: {name}</p>
-          <p>Score: 
-            {` ${points}/${data.length} 
-            (${(points / data.length) * 100}%)`}
-          </p>
-          <p>Category: {data[0].category.slice(14)}</p>
-          <p>Difficulty: {difficulty}</p>
-          <a href="./">Want to play again?</a>
+          <ul>
+            <li>Your name: {name}</li>
+            <li>Score:{` ${points}/${data.length}`}</li>
+            <li>Category: {data[0].category.slice(14)}</li>
+            <li>Difficulty: {difficulty}</li>
+            <li><a href="./">Want to play again?</a></li>
+          </ul>
       </div>
     )
 }
