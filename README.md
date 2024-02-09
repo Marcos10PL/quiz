@@ -10,5 +10,5 @@ The website downloads and searches data (questions, answers, etc.) from the free
 ## tech
 
 -- React.js <br>
--- HTML, CSSc <br>
+-- HTML, CSS <br>
 
